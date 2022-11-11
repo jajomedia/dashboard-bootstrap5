@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="iso-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ineditto - Elements</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/material-icon.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar sticky-top bg-light mb-3">
+            <div class="container-fluid ">
+                <div class="d-flex align-items-center">
+                    <button class="icon-box-mod-rh me-2" data-bs-toggle="tooltip" data-bs-placement="left" title="Recursos Humanos" data-bs-custom-class="custom-tooltip custom-tooltip-success">RH</button>
+                    <div class="breadcrumbs">
+                        <h5>RECURSOS HUMANOS</h5> 
+                        <small>CONTROL</small><span class="material-icons-round md-16">keyboard_double_arrow_right</span><small>Personal de la Empresa</small>
+                    </div>
+                </div> 
+
+                <!-- <a class="navbar-brand" href="#"><img class="img-fluid" width="180" src="ico/Logo_ineditto.svg" alt=""></a> -->
+                <div class="d-flex flex-wrap align-items-center">
+                    <button class="icon-header-menu mx-2" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="offcanvasWithBothOptions"></button>
+                    <div>
+                        <div class="dropdown">
+                            <button class="icon-header-noti" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="-30,20"></button>
+    
+                            <ul class="dropdown-menu dropdown-menu-md-end dropdown-menu-noti animation-drop">
+                            <li>
+                                <h6 class="dropdown-header border-bottom border-secondary">
+                                Notificaciones
+                                </h6>
+                            </li>
+                            <li class="dropdown-block">
+                                <div class="icon-box-primary"></div>
+                                <div class="ms-2">
+                                    <div class="dropdown-text">Tienes 2 diligencias pendiente</div>
+                                    <div class="dropdown-text-small">Ir a mis Diligencias</div>
+                                </div>
+                            </li>
+                            <li class="dropdown-block">
+                                <div class="icon-box-danger"></div>
+                                <div class="ms-2">
+                                    <div class="dropdown-text">Tienes 1 tarea pendiente</div>
+                                    <div class="dropdown-text-small">Ir a mis tareas</div>
+                                </div>
+                            </li>
+                            <li class="dropdown-block">
+                                <div class="icon-box-success"></div>
+                                <div class="ms-2">
+                                    <div class="dropdown-text">Tienes 1 Evento pendiente</div>
+                                    <div class="dropdown-text-small">Ver ticket</div>
+                                </div>
+                            </li>
+                            <li class="dropdown-block">
+                                <div class="icon-box-warning"></div>
+                                <div class="ms-2">
+                                    <div class="dropdown-text">Tienes 1 solicitud de soporte sin cerrar</div>
+                                    <div class="dropdown-text-small">Ir a mis Diligencias</div>
+                                </div>
+                            </li>
+                            <li class="dropdown-block">
+                                <div><div class="icon-box-pink"></div></div> 
+                                <div class="ms-2">
+                                    <div class="dropdown-text">Las siguientes personas cumplen años en los próximos días:</div>
+                                    <div class="dropdown-text-small">Ver fechas</div>
+                                </div>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown position-relative d-none d-sm-block">
+                            <button class="icon-header-mod mx-2" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                            <ul class="dropdown-menu dropdown-menu-md-end dropdown-menu-noti animation-drop">
+                            <li>
+                                <h6 class="dropdown-header border-bottom border-secondary text-uppercase">
+                                Modulos ineditto
+                                </h6>
+                            </li>
+                            <li class="dropdown-block">
+                                <div class="icon-box-admin"></div>
+                                <div class="ms-2">
+                                    <div class="dropdown-text d-flex flex-column">
+                                        <small class="text-black-50">Módulo</small>
+                                        ADMINISTRACIÓN
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-block">
+                                <div class="icon-box-cot"></div>
+                                <div class="ms-2">
+                                    <div class="dropdown-text d-flex flex-column">
+                                        <small class="text-black-50">Módulo</small>
+                                        COTIZACIÓN
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-block">
+                                <div class="icon-box-cm"></div>
+                                <div class="ms-2">
+                                    <div class="dropdown-text d-flex flex-column">
+                                        <small class="text-black-50">Módulo</small>
+                                        COMERCIAL
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-block">
+                                <div class="icon-box-invt"></div>
+                                <div class="ms-2">
+                                    <div class="dropdown-text d-flex flex-column">
+                                        <small class="text-black-50">Módulo</small>
+                                        INVENTARIO
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-block">
+                                <div class="icon-box-log"></div>
+                                <div class="ms-2">
+                                    <div class="dropdown-text d-flex flex-column">
+                                        <small class="text-black-50">Módulo</small>
+                                        LOGÍTICA
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-block">
+                                <div class="icon-box-p"></div>
+                                <div class="ms-2">
+                                    <div class="dropdown-text d-flex flex-column">
+                                        <small class="text-black-50">Módulo</small>
+                                        PRODUCCIÓN
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-block">
+                                <div class="icon-box-ma"></div>
+                                <div class="ms-2">
+                                    <div class="dropdown-text d-flex flex-column">
+                                        <small class="text-black-50">Módulo</small>
+                                        MANTENIMIENTO ACTIVOS
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-block">
+                                <div class="icon-box-rh"></div>
+                                <div class="ms-2">
+                                    <div class="dropdown-text d-flex flex-column">
+                                        <small class="text-black-50">Módulo</small>
+                                        RECURSOS HUMANOS
+                                    </div>
+                                </div>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="icon-header-dark d-none d-sm-block"></button>
+                    <button class="icon-header-exit mx-2 d-none d-sm-block"></button>
+                </div>
+            </div>
+        </nav>
+<div class="offcanvas offcanvas-start bg-offcanvas" data-bs-scroll="true" tabindex="-1" id="staticBackdrop"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header bg-white d-flex flex-column border-bottom border-dark border-2">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <img src="img/arcaPublicidad.gif" alt="" class="img-fluid">
+    </div>
+    <div class="offcanvas-body">
+        <nav id="style-selector-container">
+            <div class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li class="active treeview menu-open">
+                        <a class="bg-black" ref=""><span class="material-icons-round">dashboard</span>MÓDULOS<span class="material-icons-round arrow-menu float-end">chevron_left</span></a>
+                        <ul class="sidebar-submenu bg-dark">
+                            <li><a href="http://newdesign.kom/sass/000-admin/"><span class="material-icons-round md-18 text-red">verified</span> Administración</a></li>
+                            <li><a href="http://newdesign.kom/sass/003-cot/"><span class="material-icons-round md-18 text-cot">verified</span> Cotizaciones</a></li>
+                            <li><a href="http://newdesign.kom/sass/002-cm/"><span class="material-icons-round md-18 text-com">verified</span> Comercial</a></li>
+                            <li><a href="http://newdesign.kom/sass/004-inv/"><span class="material-icons-round md-18 text-inv">verified</span> Inventarios</a></li>
+                            <li><a href="http://newdesign.kom/sass/005-lg/"><span class="material-icons-round md-18 text-log">verified</span> Logistica</a></li>
+                            <li><a href="http://newdesign.kom/sass/001-prod/"><span class="material-icons-round md-18 text-prod">verified</span> Producción</a></li>
+                            <li><a href="http://newdesign.kom/sass/006-me/"><span class="material-icons-round md-18 text-greenlight">verified</span> Mantenimiento de Activos</a></li>
+                            <li><a href="http://newdesign.kom/sass/008-rh/"><span class="material-icons-round md-18 text-rh">verified</span> Recursos Humanos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span class="material-icons-round md-16 mr-2">person_add</span></span>CONTROL<span class="material-icons-round arrow-menu float-end">chevron_left</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/001CONTROL/Personal-de-la-Empresa.php"><span class="material-icons-round md-16 mr-2">people</span></span>Personal de Empresa</a></li>
+                            <li><a href="" onclick="PopupCenter('http://newdesign.kom/sass/008-rh/001CONTROL/Usuarios_del_Sistema.php','xtf','1200','1000');"><span class="material-icons-round md-16 mr-2">person</span></span> Usuarios del Sistema</a>
+                            </li>
+                            <li><a href="http://newdesign.kom/sass/008-rh/001CONTROL/Cargos.php"><span class="material-icons-round md-16 mr-2">trip_origin</span> Cargos</a></li>
+                            <li><a href=""><span class="material-icons-round md-16 mr-2">groups</span></span>
+                                    <span>GRUPOS DE PERSONAL</span><span class="material-icons-round arrow-menu float-end">chevron_left</span></a>
+                                <ul class="sidebar-submenu">
+                                    <li><a href="http://newdesign.kom/sass/008-rh/001CONTROL/Grupos_de_Trabajos.php"><span class="material-icons-round md-16 mr-2">workspaces</span></span>Grupos de Trabajo</a></li>
+                                    <li><a href="http://newdesign.kom/sass/008-rh/001CONTROL/Grupos_de_Ventas.php"><span class="material-icons-round md-16 mr-2">trip_origin</span>Grupos de Ventas</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href=""> <span class="material-icons-round md-16 mr-2">back_hand</span></i>
+                                    DOTACIONES<span
+                                        class="material-icons-round arrow-menu float-end">chevron_left</span></a>
+                                <ul class="sidebar-submenu">
+                                    <li><a href="http://newdesign.kom/sass/008-rh/001CONTROL/Lineas.php"><span
+                                                class="material-icons-round md-16 mr-2">align_vertical_bottom</span>líneas</a>
+                                    </li>
+                                    <li><a
+                                            href="http://newdesign.kom/sass/008-rh/001CONTROL/DOTACIONES/Elementos_Dot-Proteccion.php"><span
+                                                class="material-icons-round md-16 mr-2">trip_origin</span>Elementos de
+                                            Dot/Prot.</a></li>
+                                    <li><a
+                                            href="http://newdesign.kom/sass/008-rh/001CONTROL/DOTACIONES/Entrega_de_Dotacion.php"><span
+                                                class="material-icons-round md-16 mr-2">shopping_basket</span>Entrega de
+                                            Dotación</a></li>
+                                    <li><a
+                                            href="http://newdesign.kom/sass/008-rh/001CONTROL/DOTACIONES/Ver_Entregas.php"><span
+                                                class="material-icons-round md-16 mr-2">trip_origin</span>Ver
+                                            Entregas</a></li>
+                                    <li><a
+                                            href="http://newdesign.kom/sass/008-rh/001CONTROL/DOTACIONES/Ajustar_Formato_de_Entregas.php"><span
+                                                class="material-icons-round md-16 mr-2">assignment_turned_in</span>Ajustar
+                                            Formatos de Entregas</a></li>
+                                </ul>
+                            </li>
+                            <li><a href=""><span class="material-icons-round md-16 mr-2">query_builder</span> JORNADAS
+                                    DE
+                                    TRABAJO<span
+                                        class="material-icons-round arrow-menu float-end">chevron_left</span></a>
+                                <ul class="sidebar-submenu">
+                                    <li><a
+                                            href="http://newdesign.kom/sass/008-rh/001CONTROL/JORNADAS DE TRABAJO/Definir_Jornadas.php"><span
+                                                class="material-icons-round md-16 mr-2">browse_gallery</span>Definir
+                                            jornada</a>
+                                    </li>
+                                    <li><a
+                                            href="http://newdesign.kom/sass/008-rh/001CONTROL/JORNADAS DE TRABAJO/Programacion_Turnos.php"><span
+                                                class="material-icons-round md-16 mr-2">trip_origin</span>Programar
+                                            Turnos</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="http://newdesign.kom/sass/008-rh/001CONTROL/Parafiscales_Otros.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Parafiscales/otros</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span
+                                class="material-icons-round md-16 mr-2">badge</span><span>OPERACIONES</span><span
+                                class="material-icons-round arrow-menu float-end">chevron_left</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/002OPERACIONES/Usuarios_Conectados.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Usuarios
+                                    Conectados</a></li>
+                        </ul>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/002OPERACIONES/Verificar_Marcaciones.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Verificar
+                                    Marcaciones</a></li>
+                        </ul>
+                        <ul class="sidebar-submenu">
+                            <li><a
+                                    href="http://newdesign.kom/sass/008-rh/002OPERACIONES/Tiempo_Productivo_Empleados.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Tiempos Productivos de
+                                    Empleados</a></li>
+                        </ul>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/002OPERACIONES/Clasificados.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Clasificados</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span
+                                class="material-icons-outlined md-16 mr-2">receipt_long</span><span>NOMINA</span><span
+                                class="material-icons-round arrow-menu float-end">chevron_left</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/002_NOMINA/Generar_nomina.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Generar Nómina</a>
+                            </li>
+                        </ul>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/002_NOMINA/Ajustar_nomina.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Ajustar Nómina</a>
+                            </li>
+                        </ul>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/002_NOMINA/Ver_nominas_registradas.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Ver nóminas
+                                    Registradas</a>
+                            </li>
+                        </ul>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/002_NOMINA/Novedades.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Novedades</a></li>
+                        </ul>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/002_NOMINA/Documentos_electronicos.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Documentos
+                                    Electrónicos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span
+                                class="material-icons-outlined md-16 mr-2">text_snippet</span><span>REPORTES</span><span
+                                class="material-icons-round arrow-menu float-end">chevron_left</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/003 REPORTES/Privilegios de Acceso.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Privilegios de
+                                    Acceso</a></li>
+                        </ul>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/003 REPORTES/Reg_de_Ingresos_al_sistema.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Reg. de Ingresos al
+                                    Sistema</a></li>
+                        </ul>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/003 REPORTES/Control_de_Marcaciones.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Control de
+                                    Marcación</a></li>
+                        </ul>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/003 REPORTES/Parientes.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Parientes</a></li>
+                        </ul>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/003 REPORTES/Cumpleaños.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Cumpleaños</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span class="material-icons-outlined md-16 mr-2">multiple_stop</span>ACTIVIDADES<span
+                                class="material-icons-round arrow-menu float-end">chevron_left</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/004ACTIVIDADES/Nueva-Diligencia.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Nueva Diligencia</a>
+                            </li>
+                            <li><a href="http://newdesign.kom/sass/008-rh/004ACTIVIDADES/Mis-Diligencia.php"><span
+                                        class="material-icons-round md-16 mr-2">library_books</span>Mis Diligencias</a>
+                            </li>
+                            <li><a href="http://newdesign.kom/sass/008-rh/004ACTIVIDADES/Jornada-Laboral.php"><span
+                                        class="material-icons-round md-16 mr-2">schedule</span>Jornada Laboral</a></li>
+                            <li><a href="http://newdesign.kom/sass/008-rh/004ACTIVIDADES/Tareas-por-realizar.php"><span
+                                        class="material-icons-round md-16 mr-2">trip_origin</span>Tareas por
+                                    Realizar</a></li>
+                            <li><a href="http://newdesign.kom/sass/008-rh/004ACTIVIDADES/Comunicacion-Interna.php"><span
+                                        class="material-icons-round md-16 mr-2">campaign</span>Comunicación Interna</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span class="material-icons-round md-16 mr-2">live_help</span>AYUDA<span class="material-icons-round arrow-menu float-end">chevron_left</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="http://newdesign.kom/sass/008-rh/005AYUDA/Cambiar-Clave.php"><span class="material-icons-round md-16 mr-2">password</span>Cambiar Clave</a></li>
+                            <li><a href="http://newdesign.kom/sass/008-rh/005AYUDA/Mantenimiento-de-Equipos.php"><span class="material-icons-round md-16 mr-2">build</span>Mantenimiento de Activos</a></li>
+                            <li><a href="http://newdesign.kom/sass/008-rh/005AYUDA/Buzón-de-Sugerencias.php"><span class="material-icons-round md-16 mr-2">send</span>Buzón de Sugerencias</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://newdesign.kom/sass/index-light.html"><span class="material-icons-round md-16 mr-2">exit_to_app</span> <span>SALIR</span></a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="wrapper animation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box-content-rh">
+                    <div class="box-title d-flex justify-content-between align-items-center">
+                        <div><h1 class="title">BASE DE DATOS DEL PERSONAL (Total: 19 )</h1></div> 
+                        <div><a class="btn btn-link btn-link-primary" href="#" role="button"><span class="material-icons-outlined">person</span> Nuevo Empleado</a></div>
+                    </div>
+                    <div class="box-title d-flex justify-content-between align-items-center bg-light">
+                        <div><h5>Elija una de las siguientes condiciones y automáticamente el sistema generará la consulta</h5></div> 
+                        <div><a class="btn btn-link btn-link-primary" href="#" role="button"><span class="material-icons-outlined">link</span> Ir a Búsqueda Avanzada</a></div>
+                    </div>
+                    <div class="box-body">
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingInput"
+                                            placeholder="Nombre">
+                                        <label for="floatingInput">Nombre</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-auto d-flex align-items-center">
+                                    <div>
+                                            <label class="me-3" for="">Estado</label>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                    value="option1">
+                                                <label class="form-check-label text-success" for="inlineCheckbox1">Activo</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                    value="option2">
+                                                <label class="form-check-label text-danger" for="inlineCheckbox2">Bloqueado</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                                    value="option3">
+                                                <label class="form-check-label" for="inlineCheckbox3">Retirado</label>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-4">
+                                    <button type="button" class="btn btn-secondary me-3"><span class="material-icons-round md-16">check_circle_outline</span>Consultar </button>
+                                </div>
+                                <div class="col-md-12 mt-3">
+                                    <div class="d-flex flex-wrap">
+                                        <button type="button" class="btn btn-third btn-success">A</button>
+                                        <button type="button" class="btn btn-third btn-success">B</button>
+                                        <button type="button" class="btn btn-third btn-success">C</button>
+                                        <button type="button" class="btn btn-third btn-success">D</button>
+                                        <button type="button" class="btn btn-third btn-success">E</button>
+                                        <button type="button" class="btn btn-third btn-success">F</button>
+                                        <button type="button" class="btn btn-third btn-success">G</button>
+                                        <button type="button" class="btn btn-third btn-success">H</button>
+                                        <button type="button" class="btn btn-third btn-success">I</button>
+                                        <button type="button" class="btn btn-third btn-success">J</button>
+                                        <button type="button" class="btn btn-third btn-success">K</button>
+                                        <button type="button" class="btn btn-third btn-success">L</button>
+                                        <button type="button" class="btn btn-third btn-success">M</button>
+                                        <button type="button" class="btn btn-third btn-success">N</button>
+                                        <button type="button" class="btn btn-third btn-success">O</button>
+                                        <button type="button" class="btn btn-third btn-success">P</button>
+                                        <button type="button" class="btn btn-third btn-success">Q</button>
+                                        <button type="button" class="btn btn-third btn-success">R</button>
+                                        <button type="button" class="btn btn-third btn-success">S</button>
+                                        <button type="button" class="btn btn-third btn-success">T</button>
+                                        <button type="button" class="btn btn-third btn-success">U</button>
+                                        <button type="button" class="btn btn-third btn-success">V</button>
+                                        <button type="button" class="btn btn-third btn-success">W</button>
+                                        <button type="button" class="btn btn-third btn-success">X</button>
+                                        <button type="button" class="btn btn-third btn-success">Y</button>
+                                        <button type="button" class="btn btn-third btn-success">Z</button>
+                                        <button type="button" class="btn btn-third btn-success">TODOS</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box-content-rh">
+                    <div class="box-title d-flex justify-content-between align-items-center">
+                        <div><h2 class="title">BÚSQUEDA AVANZADA</h2></div>
+                        <div><a class="btn btn-link btn-link-primary" href="#" role="button"><span class="material-icons-outlined">link</span> Ir a Búsqueda Básica</a></div>
+                    </div>
+                    <div class="box-body">
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                        <div class="input-group form-floating">
+                                            <span class="input-group-text" id="basic-addon1"><span class="material-icons-outlined md-16">event</span></span>
+                                            <input type="date" class="form-control">
+                                            <label for="">Fecha de contrato desde</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="input-group form-floating">
+                                        <span class="input-group-text" id="basic-addon1"><span class="material-icons-outlined md-16">event</span></span>
+                                        <input type="date" class="form-control">
+                                        <label for="">Hasta</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="tc" name="tc" aria-label="Floating label select example">
+                                            <option value="0" selected>N/A</option>
+                                            <option value="1">Término Fijo</option>
+                                            <option value="2">Término indefinido</option>
+                                            <option value="3">De obra o labor</option>
+                                            <option value="4">Prestación de Servicios</option>
+                                            <option value="5">De Aprendizaje</option>
+                                            <option value="6">Ocasional</option>
+                                        </select>
+                                        <label for="tc">Tipo de Contrato</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="genero" name="genero">
+                                            <option value="" selected="">Elija Uno</option>
+                                            <option value="o">Masculino</option>
+                                            <option value="a">Femenino</option>
+                                        </select>
+                                        <label for="genero">Genero</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="estCiv" name="estCiv" aria-label="Floating label select example">
+                                            <option value="" selected="">Elija Uno</option>
+                                            <option value="0">Soltero/a</option>
+                                            <option value="1">Casado/a</option>
+                                            <option value="2">Divorciado/a</option>
+                                            <option value="3">Viudo/a</option>
+                                            <option value="4">Separado/a</option>
+                                            <option value="5">Unión de hecho</option>
+                                        </select>
+                                        <label for="estCiv">Estado Civil</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="gs" name="gs" >
+                                            <option value="" selected="">Elija uno</option>
+                                            <option value="1">O-</option>
+                                            <option value="2">O+</option>
+                                            <option value="3">A-</option>
+                                            <option value="4">A+</option>
+                                            <option value="5">B-</option>
+                                            <option value="6">B+</option>
+                                            <option value="7">AB-</option>
+                                            <option value="8">AB+</option>
+                                        </select>
+                                        <label for="gs">Grupo Sanguíneo:</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="cargo" name="cargo" >
+                                            <option value="">Elija Uno</option>
+                                            <option value="20">Analista Desarrollador</option>
+                                            <option value="11">Asistente de Ventas</option>
+                                            <option value="8">Coordinador de Logística</option>
+                                            <option value="5">Coordinador de Producción</option>
+                                            <option value="23">Cortador</option>
+                                            <option value="7">Gerente de Ventas</option>
+                                            <option value="4">Grupo Administrativo</option>
+                                            <option value="1">Grupo de Ventas</option>
+                                            <option value="9">Jefe de Calidad</option>
+                                            <option value="2">Logística</option>
+                                            <option value="21">Mensajero</option>
+                                            <option value="3">Operario de Producción</option>
+                                            <option value="22">Supervisor de Acabados</option>
+                                            <option value="6">Supervisor de Planta</option>
+                                        </select>
+                                        <label for="cargo">Tipo de Contrato</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="Documento Identidad">
+                                        <label for="floatingInput">Documento Identidad</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-secondary me-3"><span class="material-icons-round md-16">check_circle_outline</span>Consultar </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box-content-rh">
+                    <div class="box-title d-flex justify-content-between align-items-center">
+                        <div class="d-sm-flex flex-xs-column d-md-flex align-items-center">
+                            <div class="icon-convention">
+                                <div><div class="icon-table-success"><span class="material-icons-outlined md-18">person</span></div></div>
+                                <div class="convention-text text-success">Activo</div>
+                            </div>
+                            <div class="icon-convention">
+                                <div><div class="icon-table-danger"><span class="material-icons-outlined md-18">person</span></div></div>
+                                <div class="convention-text text-danger">Bloqueado</div>
+                            </div>
+                            <div class="icon-convention">
+                                <div><div class="icon-table-secondary"><span class="material-icons-outlined md-18">person</span></div></div>
+                                <div class="convention-text text-secondary">Retirado</div>
+                            </div>
+                        </div> 
+                        <div><a class="btn btn-link btn-link-success" href="#" role="button"><span class="material-icons-outlined">table_chart</span> Enviar Excel</a></div>
+                    </div>
+                    <div class="box-body-table">
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th width="50">Edi.</th>
+                                        <th>Acc.</th>
+                                        <th>Est.</th>
+                                        <th>Gr. Tr.</th>
+                                        <th>Nombres y Apellidos</th>
+                                        <th>G.S.</th>
+                                        <th>C. O.</th>
+                                        <th>Cargo</th>
+                                        <th>Dirección y Teléfonos</th>
+                                        <th>Correo Electrónico</th>
+                                        <th>Edad</th>
+                                        <th>EPS</th>
+                                        <th>ARL</th>
+                                        <th>V. C.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#" onclick="btnEmision()"><img class="img-fluid rounded" src="./img/138.jpg" alt=""></a></td>
+                                        <td>A C I L M P R Z</td>
+                                        <td><a href="#" class="icon-table-success pe-auto" data-bs-toggle="tooltip" data-bs-placement="top" title="Activo" data-bs-custom-class="custom-tooltip custom-tooltip-success"><span class="material-icons-outlined md-18">person</span></a></td>
+                                        <td><a href="#" class="icon-table-warning" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip custom-tooltip-warning" data-bs-html="true" title="4F 01Imp. Flexográfica - 1O 03Preprensa  / 1O 04Plancha - CTP / 1O 05Precorte / 2D 02Impresión Digital Color / Administracion / Maquinaria y Equipo / 1O 01Diseño / 1O 02Prueba Digital / 1O 06Impresión Offset / 2D 01Impresión Digital B/N / 3G 01Impresión Gran Formato / Transporte">13</a></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="icon-table-secondary"><span class="material-icons-outlined md-18">fingerprint</span></div>
+                                                <div class="icon-table-primary"><span class="material-icons-outlined md-18">person</span></div>
+                                                <span>Alex Arley Zapata S.</span>
+                                            </div> 
+                                        </td>
+                                        <td>A+</td>
+                                        <td>Principal</td>
+                                        <td>Gerente de Venta <s>CO$ 72.858</s></td>
+                                        <td>Calle 10 # 40-80 <br>
+                                            Tel.: 6050983 <br> Cel.: 3132852342</td>
+                                        <td>
+                                            Pers.: <br>
+                                            <a href="mailto:alex.arley.zapata.soto@gmail.com">alex.arley.zapata.soto@gmail.com</a>
+                                            <br>
+                                            Corp.: <a href="mailto:a.zapata@itt.com.co">a.zapata@itt.com.co</a>
+                                        </td>
+                                        <td>43</td>
+                                        <td>SURA</td>
+                                        <td>SURA</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#"><img class="img-fluid rounded" src="./img/138.jpg" alt=""></a></td>
+                                        <td>A C I L M P R Z</td>
+                                        <td><div class="icon-table-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Bloqueado" data-bs-custom-class="custom-tooltip custom-tooltip-danger"><span class="material-icons-outlined md-18">person</span></div></td>
+                                        <td><div class="icon-table-warning" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip custom-tooltip-warning" data-bs-html="true" title="4F 01Imp. Flexográfica - 1O 03Preprensa  / 1O 04Plancha - CTP / 1O 05Precorte / 2D 02Impresión Digital Color">4</div></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="icon-table-secondary"><span class="material-icons-outlined md-18">fingerprint</span></div>
+                                                <div class="icon-table-warning"><span class="material-icons-outlined md-18">person</span></div>
+                                                <span>Alex Arley Zapata S.</span>
+                                            </div> 
+                                        </td>
+                                        <td>A+</td>
+                                        <td>Principal</td>
+                                        <td>Gerente de Venta</td>
+                                        <td>Calle 10 # 40-80 <br>
+                                            Tel.: 6050983 <br> Cel.: 3132852342</td>
+                                        <td>
+                                            Pers.: <br>
+                                            <a href="mailto:alex.arley.zapata.soto@gmail.com">alex.arley.zapata.soto@gmail.com</a>
+                                            <br>
+                                            Corp.: <a href="mailto:a.zapata@itt.com.co">a.zapata@itt.com.co</a>
+                                        </td>
+                                        <td>43</td>
+                                        <td>SURA</td>
+                                        <td>SURA</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#"><img class="img-fluid rounded" src="./img/138.jpg" alt=""></a></td>
+                                        <td>A C I L M P R Z</td>
+                                        <td><div class="icon-table-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Retirado" data-bs-custom-class="custom-tooltip custom-tooltip-secondary"><span class="material-icons-outlined md-18">person</span></div></td>
+                                        <td><div class="icon-table-warning" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip custom-tooltip-warning" data-bs-html="true" title="4F 01Imp. Flexográfica - 1O 03Preprensa  / 1O 04Plancha - CTP / 1O 05Precorte / 2D 02Impresión Digital Color">4</div></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="icon-table-secondary"><span class="material-icons-outlined md-18">fingerprint</span></div>
+                                                <div class="icon-table-danger"><span class="material-icons-outlined md-18">not_interested</span></div>
+                                                <span>Alex Arley Zapata S.</span>
+                                            </div> 
+                                        </td>
+                                        <td>A+</td>
+                                        <td>Principal</td>
+                                        <td>Gerente de Venta</td>
+                                        <td>Calle 10 # 40-80 <br>
+                                            Tel.: 6050983 <br> Cel.: 3132852342</td>
+                                        <td>
+                                            Pers.: <br>
+                                            <a href="mailto:alex.arley.zapata.soto@gmail.com">alex.arley.zapata.soto@gmail.com</a>
+                                            <br> Corp.: <a href="mailto:a.zapata@itt.com.co">a.zapata@itt.com.co</a>
+                                        </td>
+                                        <td>43</td>
+                                        <td>SURA</td>
+                                        <td>SURA</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                <div class="box-footer"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="footer" class="box-footer bg-secondary text-white">
+    <p>Aqui va el footer</p>
+</div>
+    <!-- <script src="js/popper.min.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script>
+
+function btnEmision (){
+    Toastify({
+  text: "Tienes un evento pendiente ",
+  duration: 3000,
+  destination: "https://github.com/apvarun/toastify-js",
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "right", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "linear-gradient(to right, #00b09b, #96c93d)",
+  },
+}).showToast();
+} // Callback after click
+
+    </script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="iso-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ineditto - Elements</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/material-icon.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar sticky-top bg-light mb-3">
+            <div class="container-fluid ">
+                <div class="d-flex align-items-center">
+                    <button class="icon-box-mod-rh me-2" data-bs-toggle="tooltip" data-bs-placement="left" title="Recursos Humanos" data-bs-custom-class="custom-tooltip custom-tooltip-success">RH</button>
+                    <div class="breadcrumbs">
+                        <h5>RECURSOS HUMANOS</h5> 
+                        <small>CONTROL</small><span class="material-icons-round md-16">keyboard_double_arrow_right</span><small>Usuarios del sistema</small>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+
+<div class="wrapper animation">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-12 col-lg-8">
+                <div class="box-content-rh">
+                    <div class="box-title d-flex justify-content-between align-items-center">
+                        <div><h1 class="title">Modificar permisos de acceso al sistema</h1></div>
+                        <div><a class="btn btn-link btn-link-primary" href="#" role="button"><span class="material-icons-outlined">arrow_back</span> Regresar</a></div>
+                    </div>
+                    <div class="box-body">
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="nOrden" name="nOrden">
+                                            <option value="0" selected="">Empleados</option>
+                                            <option value="1">Clientes</option>
+                                        </select>
+                                        <label for="tc">Elija uno</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="form-floating">
+                                        <select name="nOrden" id="nOrden" class="form-select">
+                                            <option class="ip" value="3">Aura Delia Pérez Carreño (Encuadernacion)</option>
+                                            <option class="ip" value="4">Claudia Herreño Chacón (Encuadernacion)</option>
+                                            <option class="ip" value="5">Claudia Patricia Castillo (Grupo Administrativo)</option>
+                                            <option class="ip" value="6">Consuelo Astros Mendoza (Encuadernacion)</option>
+                                            <option class="ip" value="7">David Orlando Paez Araque (Plegador)</option>
+                                            <option value="30">dgp Editores (Grupo de Ventas)</option>
+                                            <option class="user" value="32">Edgar Galvis Castro (Coordinador de Producción)</option>
+                                            <option class="ip" value="8">Esperanza Gómez Garzón (Contador)</option>
+                                            <option class="user" value="9">Francisco Javier Lombana Herrera (Gerente de Ventas)</option>
+                                            <option class="ip" value="10">Gina Paola Fonseca Cuevas (Encuadernacion)</option>
+                                            <option class="user" value="11">Giovanni Alberto Naranjo Herrera (Gerente de Ventas)</option>
+                                            <option class="ip" value="29">Gloria Mariana Jurado Leon (Grupo de Ventas)</option>
+                                            <option class="ip" value="26">Graciela Cardenas (Encuadernacion)</option>
+                                            <option class="ip" value="13">Hector Enrique Garzón Herrera (Prensista)</option>
+                                            <option class="ip" value="14">John Alejandro Barrios Velasco (Prensista)</option>
+                                            <option class="ip" value="15">Jose Absalon Gil Torres (Cortador)</option>
+                                            <option class="ip" value="16">Jose Andres Bulla (Jefe de Produccion)</option>
+                                            <option value="31">Juan Antonio Herrera Herrera (Logística)</option>
+                                            <option class="ip" value="17">Juan David Alvarado Sáenz (Pre Prensa)</option>
+                                            <option class="ip" value="18">Lida Esperanza Yanquen Hernández (Encuadernacion)</option>
+                                            <option class="ip" value="19">Liliana Pabón Ramírez (Impresion Digital)</option>
+                                            <option class="ip" value="20">Luis Alberto Peñuela Jiménez (Coordinador de Logística)</option>
+                                            <option class="ip" value="21">Luis Eduardo Herrera Herrera (Logística)</option>
+                                            <option value="22">Maria Mery Herrera De Lombana (Grupo Administrativo)</option>
+                                            <option value="23">Mery Elizabeth Lombana Herrera (Grupo Administrativo)</option>
+                                            <option class="ip" value="24">Nidia Martínez Guerrero (Encuadernacion)</option>
+                                            <option class="ip" value="25">Sonia Azucena Hormaza Rincón (Encuadernacion)</option>
+                                            <option class="ip" value="28">Victor Rodriguez (Grupo de Ventas)</option>
+                                            <option class="ip" value="27">Yudi Fernanda Leguizamon (Encuadernacion)</option>
+                                         </select>
+                                        <label for="tc">Elija un empleado</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <label class="me-3" for="">Mostrar</label>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="activosBloqueados" id="Activos1" value="option1" checked="">
+                                            <label class="form-check-label" for="Activos1">Activo</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="activosBloqueados" id="Activos2" value="option2">
+                                            <label class="form-check-label" for="Activos2">Bloqueados</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <div class="box-content-rh">
+                    <div class="box-title d-flex justify-content-between align-items-center">
+                        <div><h2 class="title">Perfil de: Alex Arley</h2></div>
+                    </div>
+                    <div class="box-body">
+                        <form action="" class="needs-validation" method="post" novalidate>
+                            <div class="grid-container">
+                                <div class="col-span-1"><img class="img-fluid rounded shadow" src="img/138.jpg" alt=""></div>
+                                <div class="col-span-4">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control " id="floatingInput" placeholder="Tu Contraseña">
+                                        <small class="text-success">
+                                            Ajustada en: 2017-07-21 por: Liliana Edid Suárez.
+                                          </small>
+                                        <label for="floatingInput">Tu Contraseña</label>
+                                    </div>
+                                    <div class="form-floating my-3">
+                                        <input type="number" class="form-control " id="floatingInput" placeholder="Solicitar cambio de clave cada cuantos días">
+                                        <small class="">
+                                            Entre 0 y 99
+                                          </small>
+                                        <label for="floatingInput">Solicitar cambio de clave cada</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <hr>
+                        <table class="table-sm">
+                            <tbody>
+                                <tr>
+                                    <th>Cargo </th>
+                                    <td>: Operario de Producción </td>
+                                </tr>
+                                <tr>
+                                    <th>Dirección  </th>
+                                    <td> : carrera 111 c # 64 c 09 </td>
+                                </tr>
+                                <tr>
+                                    <th>Email  </th>
+                                    <td>: Operario de Producción </td>
+                                </tr>
+                                <tr>
+                                    <th>Cargo </th>
+                                    <td>: anam_enciso@hotmail.com </td>
+                                </tr>
+                                <tr>
+                                    <th>C.O. Empleado  </th>
+                                    <td>: Principal </td>
+                                </tr>
+                                <tr>
+                                    <th>Teléfonos</th>
+                                    <td>: // 3142087934 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr>
+                            <div class="mb-3 text-dark"><h4> Qué puede consultar en "Búsqueda de Documentos"? </h4></div>
+                        <form action="">
+                            <div class="row row-cols-lg-2">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[0]" checked>
+                                        <label class="form-check-label" for="tipoDoc[0]">Cotizaciones</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[6]" >
+                                        <label class="form-check-label" for="tipoDoc[6]">Hoja de costos</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[9]" >
+                                        <label class="form-check-label" for="tipoDoc[9]">Orden de compra</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[1]" >
+                                        <label class="form-check-label" for="tipoDoc[1]">O.P.</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[14]" >
+                                        <label class="form-check-label" for="tipoDoc[14]">Comprobantes de Egreso</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[12]" >
+                                        <label class="form-check-label" for="tipoDoc[12]">Cuentas de Cobro</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[4]" >
+                                        <label class="form-check-label" for="tipoDoc[4]">Recibos de Caja</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[8]" >
+                                        <label class="form-check-label" for="tipoDoc[8]">Comprobantes de Recaudo</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[7]" >
+                                        <label class="form-check-label" for="tipoDoc[7]">Ord. Servicio a Terceros</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[2]" >
+                                        <label class="form-check-label" for="tipoDoc[2]">Remisiones</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[3]" >
+                                        <label class="form-check-label" for="tipoDoc[3]">Facturas de Venta</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[13]" >
+                                        <label class="form-check-label" for="tipoDoc[13]">Facturas de Compra</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[5]" >
+                                        <label class="form-check-label" for="tipoDoc[5]">Notas Crédito</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[17]" >
+                                        <label class="form-check-label" for="tipoDoc[17]">Registro de Salida</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[18]" >
+                                        <label class="form-check-label" for="tipoDoc[18]">Estado de Cuenta</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="tipoDoc[19]" >
+                                        <label class="form-check-label" for="tipoDoc[19]">Certificado de Calidad</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="sop[]" >
+                                    <label class="form-check-label" for="sop[]">Puede solicitar Soporte Técnico para equipos de la compañía</label>
+                                </div>
+                            </div>
+                        </form>
+                    <hr>
+                    <div class="mb-3 text-primary"><h4> Permitir el ingreso únicamente desde:</h4></div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control " id="floatingInput"  value="181.49.197.130">
+                            <small class="text-dark">
+                                Si desea usar varias IPs, separe con una barra, ejemplo: 209.190.34.130/190.69.255.185
+                            </small>
+                            <label for="floatingInput">la ip 181.49.197.130</label>
+                        </div>
+                    <hr>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="solicitud[]" >
+                            <label class="form-check-label" for="solicitud[]">Puede enviar Solicitudes de Soporte a Ineditto</label>
+                        </div>
+                        <div class="d-flex justify-content-around my-3">
+                            <div>
+                                <button type="button" class="btn btn-danger"><span class="material-icons-round md-16">check_circle_outline</span>Modificar Datos</button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-secondary"><span class="material-icons-round md-16">check_circle_outline</span>Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="box-content-rh">
+                    <div class="box-title justify-content-center">
+                        <div class="text-center d-flex flex-column">
+                            <button type="button" class="btn btn-warning"> Nueva cuenta para Alexander Enrique <span class="material-icons-round md-16">add_circle</span></button>
+                            <small>Cada cuenta permite ingresar a un módulo a la vez</small>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                                <div class="acount_ajust">
+                                    <div class="acount_title"> <b>Administración</b> (lzapataa) </div>
+                                    <div class="grid-container">
+                                        <div class="col-span-3">
+                                            <button type="button" class="btn btn-sm btn-outline-danger"><span class="material-icons-round md-16">delete_forever</span>Borrar Cuenta</button>
+                                        </div>
+                                        <div class="col-span-3 text-sm-center text-md-end text-lg-end">
+                                            <button type="button" class="btn btn-sm btn-outline-success"><span class="material-icons-round md-16">edit</span>Ajustar Cuenta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="acount_ajust">
+                                    <div class="acount_title"> <b>Comercial</b> (lzapataa) </div>
+                                    <div class="grid-container">
+                                        <div class="col-span-3">
+                                            <button type="button" class="btn btn-sm btn-outline-danger"><span class="material-icons-round md-16">delete_forever</span>Borrar Cuenta</button>
+                                        </div>
+                                        <div class="col-span-3 text-sm-center text-md-end text-lg-end">
+                                            <button type="button" class="btn btn-sm btn-outline-success"><span class="material-icons-round md-16">edit</span>Ajustar Cuenta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="acount_ajust">
+                                    <div class="acount_title"> <b>Cotizaciones</b> (lzapataa) </div>
+                                    <div class="grid-container">
+                                        <div class="col-span-3">
+                                            <button type="button" class="btn btn-sm btn-outline-danger"><span class="material-icons-round md-16">delete_forever</span>Borrar Cuenta</button>
+                                        </div>
+                                        <div class="col-span-3 text-sm-center text-md-end text-lg-end">
+                                            <button type="button" class="btn btn-sm btn-outline-success"><span class="material-icons-round md-16">edit</span>Ajustar Cuenta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="acount_ajust">
+                                    <div class="acount_title"> <b>Inventarios</b> (lzapataa) </div>
+                                    <div class="grid-container">
+                                        <div class="col-span-3">
+                                            <button type="button" class="btn btn-sm btn-outline-danger"><span class="material-icons-round md-16">delete_forever</span>Borrar Cuenta</button>
+                                        </div>
+                                        <div class="col-span-3 text-sm-center text-md-end text-lg-end">
+                                            <button type="button" class="btn btn-sm btn-outline-success"><span class="material-icons-round md-16">edit</span>Ajustar Cuenta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="acount_ajust">
+                                    <div class="acount_title"> <b>Logística</b> (lzapataa) </div>
+                                    <div class="grid-container">
+                                        <div class="col-span-3">
+                                            <button type="button" class="btn btn-sm btn-outline-danger"><span class="material-icons-round md-16">delete_forever</span>Borrar Cuenta</button>
+                                        </div>
+                                        <div class="col-span-3 text-sm-center text-md-end text-lg-end">
+                                            <button type="button" class="btn btn-sm btn-outline-success"><span class="material-icons-round md-16">edit</span>Ajustar Cuenta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="acount_ajust">
+                                    <div class="acount_title"> <b>Mantenimiento de Activos</b> (lzapataa) </div>
+                                    <div class="grid-container">
+                                        <div class="col-span-3">
+                                            <button type="button" class="btn btn-sm btn-outline-danger"><span class="material-icons-round md-16">delete_forever</span>Borrar Cuenta</button>
+                                        </div>
+                                        <div class="col-span-3 text-sm-center text-md-end text-lg-end">
+                                            <button type="button" class="btn btn-sm btn-outline-success"><span class="material-icons-round md-16">edit</span>Ajustar Cuenta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="acount_ajust">
+                                    <div class="acount_title"> <b>Producción</b> (lzapataa) </div>
+                                    <div class="grid-container">
+                                        <div class="col-span-3">
+                                            <button type="button" class="btn btn-sm btn-outline-danger"><span class="material-icons-round md-16">delete_forever</span>Borrar Cuenta</button>
+                                        </div>
+                                        <div class="col-span-3 text-sm-center text-md-end text-lg-end">
+                                            <button type="button" class="btn btn-sm btn-outline-success"><span class="material-icons-round md-16">edit</span>Ajustar Cuenta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="acount_ajust">
+                                    <div class="acount_title"> <b>Recursos Humanos</b> (lzapataa) </div>
+                                    <div class="grid-container">
+                                        <div class="col-span-3">
+                                            <button type="button" class="btn btn-sm btn-outline-danger"><span class="material-icons-round md-16">delete_forever</span>Borrar Cuenta</button>
+                                        </div>
+                                        <div class="col-span-3 text-sm-center text-md-end text-lg-end">
+                                            <button type="button" class="btn btn-sm btn-outline-success"><span class="material-icons-round md-16">edit</span>Ajustar Cuenta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+</div>
+</div>
+<div id="footer" class="box-footer bg-secondary text-white">
+    <p>Aqui va el footer</p>
+</div>
+    <!-- <script src="js/popper.min.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>
